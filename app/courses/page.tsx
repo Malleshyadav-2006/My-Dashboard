@@ -38,7 +38,7 @@ async function CoursesPageContent() {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 px-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
       {courses.map((course) => (
         <CourseTile key={course.id} course={course} />
       ))}
@@ -49,7 +49,7 @@ async function CoursesPageContent() {
 export default function CoursesPage() {
   return (
     <AppShell>
-      <div className="p-6">
+      <div className="p-4 md:p-6">
         <h1 className="text-lg font-semibold text-[#d1d5e8] mb-1">Courses</h1>
         <p className="text-sm text-[#6b7280] mb-5">Track your progress across all your courses.</p>
         <CoursesPageContent />
